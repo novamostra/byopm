@@ -1,0 +1,8 @@
+auto lo
+iface lo inet loopback
+
+auto usb0
+allow-hotplug usb0
+iface usb0 inet static
+address 10.18.1.19
+netmask 255.255.255.0
