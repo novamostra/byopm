@@ -1,0 +1,10 @@
+[Unit]
+Description=Novamostra Ethernet Gadget
+Before=network-pre.target
+Wants=network-pre.target
+
+[Service]
+ExecStart=/usr/bin/bash /etc/novamostra/gadget.sh
+
+[Install]
+WantedBy=multi-user.target
